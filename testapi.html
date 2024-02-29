@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat images</title>
+	<style>
+    .cat-image {
+      width: 200px; /* Set the desired width for all images */
+      height: auto; /* Maintain the aspect ratio */
+    }
+  </style>
+</head>
+<body>
+    <h1>The cat images ramdom</h1>
+    <p id="catlistid"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            fetchCatImagesApi();
+        });
+
+        function fetchCatImagesApi() {
+            fetch('https://localhost:7130/api/Cats?numberToGet=10')
+                .then(response => response.json())
+                .then(data => {
+				console.log(data);
+                    data.forEach(catImage => {
+						$('#catlistid').append(`<li><img src="${catImage.url}" alt="Cat Image" class="cat-image"></li>`);
+					  });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+</body>
+</html>
