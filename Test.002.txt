@@ -1,0 +1,8 @@
+Unreasonable points:
+- Label of dropdown in "Printer" section is "Name"
+ -> It should be "Type" and Name must be in the "Type" position in the section
+- Radio button in "Print Range" section: All and Current page are selected
+ -> Do not select two values at the same time in a radio button group.
+- In Print Handling section has a check box(near check box "Auto-Rotate" và "Auto-Center") was selected, but it does not have label to indidate what value
+In my opinion, when that checkbox is checked, both checkboxes Auto-Rotate and Auto-Center are checked. If unchecked, both are unchecked. If only one of Auto-Rotate or Auto-Center  is checked, then that checkbox will be unchecked.
+ 

@@ -1,0 +1,11 @@
+Personally, here are some suggestions that I understand about the requirements:
+- Navigation menu: consider collapsible menu or hamburger icon to provide a better UX on mobile interfaces, consider arranging items on the menu to not cover other interface parts
+- Responsive Layout: use css to adjust the layout, text and necessary components based on the screen size
+- Use max-width: 100% for images to ensure they scale appropriately on different devices without overflowing the container.
+- Use in header tag of html <meta name="viewport" content="width=device-width, initial-scale=1"> for scaling on mobile device.
+- On the phone interface, only the search icon should be left on search component. When the user needs to search, we can touch it and the search input should be show.
+- Consider lazy loading to improve performance in cases where the comments section has too many comments or the images are too heavy
+- Consider navigating to another view, do not use popup for detail view or add new actions
+- For users logged in on the mobile interface, consider designing a design that only shows the avatar or username and should leave it at the top of the menu.
+- Ensure that buttons, links and necessary components are displayed large enough to be tapped or touched
+- Need to test again in many devices to ensure responsive for each device.
