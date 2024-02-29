@@ -12,7 +12,7 @@
   </style>
 </head>
 <body>
-    <h1>The cat images ramdom</h1>
+    <h1>Top 10 the cat images random</h1>
     <p id="catlistid"></p>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -25,7 +25,7 @@
             fetch('https://localhost:7130/api/Cats?numberToGet=10')
                 .then(response => response.json())
                 .then(data => {
-				console.log(data);
+					console.log(data);
                     data.forEach(catImage => {
 						$('#catlistid').append(`<li><img src="${catImage.url}" alt="Cat Image" class="cat-image"></li>`);
 					  });

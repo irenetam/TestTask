@@ -1,6 +1,6 @@
 Personally, here are some suggestions that I understand about the requirements:
 - Navigation menu: consider collapsible menu or hamburger icon to provide a better UX on mobile interfaces, consider arranging items on the menu to not cover other interface parts
-- Responsive Layout: use css to adjust the layout, text and necessary components based on the screen size
+- Responsive Layout: use css to adjust the layout, text and necessary components based on the screen size(consider use bootstrap)
 - Use max-width: 100% for images to ensure they scale appropriately on different devices without overflowing the container.
 - Use in header tag of html <meta name="viewport" content="width=device-width, initial-scale=1"> for scaling on mobile device.
 - On the phone interface, only the search icon should be left on search component. When the user needs to search, we can touch it and the search input should be show.

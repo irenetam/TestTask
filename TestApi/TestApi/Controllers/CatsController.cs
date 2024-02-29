@@ -15,7 +15,7 @@ namespace TestApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<CatImage>>> GetCatImages(int numberToGet)
+        public async Task<ActionResult<List<CatImage>>> GetCatImages(int numberToGet = 10)
         {
             var catImages = await _catService.GetCatImages(numberToGet);
             if (catImages != null)
